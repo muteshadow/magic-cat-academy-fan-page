@@ -1,0 +1,97 @@
+/* GAME-WINDOW */
+.play {
+    font-size: 14px;
+    color: #fff;
+
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    border: none;
+}
+
+/* MODAL-WINDOW */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 95%;
+    max-width: 1200px;
+    /* Співвідношення сторін для ігрового поля Google */
+    aspect-ratio: 1224 / 690; 
+    background: #000;
+    border: 2px solid #D27D35;
+    border-radius: 10px;
+    /* Тут overflow необхідний, щоб гра не вилазила за рамки при масштабуванні */
+    overflow: hidden; 
+}
+
+.close-button {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+iframe {
+    width: 1224px; /* Оригінальна ширина гри */
+    height: 690px; /* Оригінальна висота гри */
+    border: none;
+    transform-origin: top left; /* Точка відліку для масштабування */
+    display: block;
+}
+
+/* DEMO */
+.modal-img {
+    width: 100%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.demo-note {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgba(22, 15, 24, .7);
+    padding: clamp(10px, 2vw, 30px);
+    border-radius: clamp(30px, 4vw, 50px);
+
+    text-align: center;
+}
+
+.demo-note a {
+    font-size: 16px;
+}
+
+@media (max-width: 430px) {
+    .demo-note {
+        width: 75%;
+    }
+}
+
+
+
+
+
+
+

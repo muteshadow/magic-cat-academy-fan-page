@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- SCROLL -->
+     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <title>Magic Cat Academy</title>
+</head>
+<body>
+    <!-- MODAL-WINDOW -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content" id="modalContent">
+            <button class="close-button" id="closeGame">&times; Закрити</button>
+            <!-- <iframe id="gameFrame" src="" allow="autoplay"></iframe> -->
+
+            <!-- DEMO -->
+            <img class="modal-img" src="img/game_bg.png" alt="Magic Cat Academy Preview">
+            <!-- <p class="demo-note">
+                Demo preview only.<br>
+                The original game belongs to
+                <a href="https://doodles.google/doodle/halloween-2016/" class="google-link">
+                    G<span style="color: #EA4335;">o</span><span style="color: #FBBC05">o</span>g<span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span>
+                </a> 
+            </p> -->
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="https://doodles.google/doodle/halloween-2016/" class="google-link">
+                    G<span style="color: #EA4335;">o</span><span style="color: #FBBC05">o</span>g<span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="about.html" class="nav_link">About</a>
+                    <a href="index.html" class="nav_link active">Home</a>
+                    <button class="nav_link play openGame">Play</button>
+                </nav>
+            </div>
+        </div>
+    </header> 
+
+    <!-- INTRO -->
+    <div class="intro">
+        <div class="container">
+            <h1 class="intro_title">Magic Cat Academy</h1>
+            <img class="intro-separator" src="img/Intro-Separator.svg" alt="">
+        </div>
+    </div>
+
+    <!-- NAV-TOGGLE -->
+    <div class="container">
+        <nav class="nav-toggle">
+            <a href="about.html" class="nav_link">About</a>
+            <a href="index.html" class="nav_link active">Home</a>
+            <button class="nav_link play openGame">Play</button>
+        </nav>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section about">
+        <div class="ghost_box">
+            <img src="img/Ghost.svg" alt="Ghost" class="ghost_svg">
+            
+            <div class="container ghost_content">
+                <div class="ghost_text_wrapper">
+                    <img src="img/about-Momo.png" alt="Momo" class="momo_img">
+                    <div class="text_block">
+                        <h3 class="section_title about_title">About the Halloween 2016 Doodle</h3>
+                        <p class="about_text">
+                            Grab your wand and help fend off a ghostly catastrophe. In this Doodle you'll swipe spells, save your friends, and help restore the peace at the Magic Cat Academy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text_block mobile_box">
+            <img src="img/about-Momo.png" alt="Momo" class="momo_img">
+            <p class="about_text">
+                Grab your wand and help fend off a ghostly catastrophe. In this Doodle you'll swipe spells, save your friends, and help restore the peace at the Magic Cat Academy.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section">
+        <div class="container">
+            <h3 class="section_title">Momo the cat Google</h3>
+
+            <div class="cat_gallery">
+                <div class="gallery_img">
+                    <img src="img/Momo-1.png" alt="">
+                    <img src="img/Momo-1.png" class="shadow-img" alt="">
+                </div>
+                <div class="gallery_img">
+                    <img src="img/Momo-2.png" alt="">
+                    <img src="img/Momo-2.png" class="shadow-img" alt="">
+                </div>
+                <div class="gallery_img">
+                    <img src="img/Momo-3.png" alt="">
+                    <img src="img/Momo-3.png" class="shadow-img" alt="">
+                </div>
+                <div class="gallery_img">
+                    <img src="img/Momo-4.png" alt="">
+                    <img src="img/Momo-4.png" class="shadow-img" alt="">
+                </div>
+                <div class="gallery_img">
+                    <img src="img/Momo-5.png" alt="">
+                    <img src="img/Momo-5.png" class="shadow-img" alt="">
+                </div>                         
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section class="section">
+        <div class="historia_container">
+            <div class="section_historia">
+                <img src="img/Section-Image.png" class="img-historia" alt="">
+
+                <div class="historia_text">
+                    <p>The inspiration for this year’s cat spell-casting game came from a real-life black cat named Momo that belongs to Doodler Juliana Chen. It seemed like a good opportunity for a cat hero, since the winner of last year’s Candy Cup Doodle was Yellow Witch and her black cat.</p>
+                    <p style="color: transparent;">...</p>
+                    <p>The original concept for the game involved a magic cat making a soup that was so good, it raised the dead. Connecting soup to Halloween proved too abstract, so the team shifted to the idea of a wizard school. This opened the door to a more robust world filled with interesting characters and paw-some themes..</p>
+                </div>
+
+                <img src="img/Web.svg" class="img-web" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="inner_footer">
+                <a href="https://doodles.google/doodle/halloween-2016/" class="google-link">
+                    G<span style="color: #EA4335;">o</span><span style="color: #FBBC05">o</span>g<span style="color: #34A853;">l</span><span style="color: #EA4335;">e</span>
+                </a>
+
+                <div class="social">
+                    Follow us
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
